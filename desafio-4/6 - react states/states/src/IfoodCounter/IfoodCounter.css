@@ -1,0 +1,21 @@
+.countex-wrapper {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #aaa;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-around;
+  height: 2.5em;
+  width: 5em;
+}
+
+.counter-button{
+  padding: 0 0.5em 0.2em;
+  font-size: 1.2em;
+  align-self: center;
+}
+
+.active {
+  font-weight: 700;
+  color: red;
+}

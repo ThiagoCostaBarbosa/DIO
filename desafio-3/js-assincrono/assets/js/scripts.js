@@ -13,7 +13,7 @@ const getCats = async () => {
 
   /*
   Ou pode ser:
-  const data = await fetch(BASE_URL)
+  const data = fetch(BASE_URL)
     .then((res) => res.json())
     .catch((e) => console.log(e));
   return data.webpurl;
