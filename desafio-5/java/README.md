@@ -129,15 +129,15 @@ Repositórico com as resoluções das atividades e desafios propostos.
 
 ### 📚 Estruturas de Dados em Java: Principais Implementações
 
-[🔗 **equals e hashCode**](src/main/java/g/equalsHashCode/Main.java): A
+[🔗 **equals e hashCode**](src/main/java/g/equalsHashCode/Main.java)
 
-[🔗 **Stack (Pilha)**](src/main/java/g/stack/Main.java): A
+[🔗 **Stack (Pilha)**](src/main/java/g/stack/Main.java)
 
-[🔗 **Queue (Fila, LikedList)**](src/main/java/g/queue/Main.java): A
+[🔗 **Queue (Fila, LikedList)**](src/main/java/g/queue/Main.java)
 
-[🔗 **List (ArrayList)**](src/main/java/g/list/Main.java): A
+[🔗 **List (ArrayList)**](src/main/java/g/list/Main.java)
 
-[🔗 **Set (HashSet)**](src/main/java/g/set/Main.java): A
+[🔗 **Set (HashSet)**](src/main/java/g/set/Main.java)
 
 
 ------------

@@ -5,7 +5,7 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 16
+sourceCompatibility = 17
 
 repositories {
     mavenCentral()
@@ -13,7 +13,7 @@ repositories {
 
 dependencies {
 
-    // ======= Necessarios para a parte 1 do curso. =========
+    // ======= Necessarios para o curso de JDBC. =========
 
     // Notar que essa API nao faz o programa rodar, apenas valida as annotations (pois sao so as especificacoes)
     // https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
@@ -23,12 +23,11 @@ dependencies {
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     implementation 'mysql:mysql-connector-java:8.0.29'
 
-    // === Necessarios para a parte 2 do curso. Essas sao as implementacoes do JPA (Hibernate e EclipseLink) e o automatizador de criacao de Metamodels ===
+    // === Necessarios para o curso de JPA. Essas sao as implementacoes do JPA (Hibernate e EclipseLink) e o automatizador de criacao de Metamodels ===
 
     // Implementacao Hibernate
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
     implementation 'org.hibernate:hibernate-core:6.0.1.Final'
-
 
     // Implementacao EclipseLink
     // https://mvnrepository.com/artifact/org.eclipse.persistence/eclipselink
@@ -38,11 +37,11 @@ dependencies {
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-jpamodelgen
     implementation 'org.hibernate.orm:hibernate-jpamodelgen:6.0.2.Final'
 
-    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0-M1'
-    // https://mvnrepository.com/artifact/org.junit.platform/junit-platform-engine
-    testImplementation 'org.junit.platform:junit-platform-engine:1.9.0-M1'
-
-
+    implementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.8.2'
 }
-targetCompatibility = JavaVersion.VERSION_16
+
+test {
+    useJUnitPlatform()
+}
+
+targetCompatibility = JavaVersion.VERSION_17
